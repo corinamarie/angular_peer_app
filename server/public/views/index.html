@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+    <html ng-app="myApp">
+        <head>
+            <title>angular version</title>
+
+            <link rel="stylesheet" href="/assets/styles/styles.css" type="text/css">
+        </head>
+        <body>
+        <div class = "container" ng-controller="CheckboxController">
+            <p>{{heading}}</p>
+        <label>Click me: <input type="checkbox" ng-model="test" ng-init="test=true" /></label><br/>
+        Show when checked:
+        <span ng-if="test" class="animate-if">
+          This is removed when the checkbox is unchecked.
+        </span>
+            <span class = "picture">
+                <img src="/assets/images/5381795_f260.jpg"/>
+                </span>
+        </div>
+        <!--SCRIPTS-->
+        <script type="text/javascript" src="/vendors/angular/angular.min.js"></script>
+        <script type="text/javascript" src="/assets/scripts/app.min.js"></script>
+        </body>
+    </html>
